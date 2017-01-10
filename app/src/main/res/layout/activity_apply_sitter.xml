@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_register"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/stroller"
+            android:tint="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="10dp"
+            android:text="Apply to be a BabySitter"
+
+            android:textAlignment="center"
+            android:textColor="@color/input_register" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="성별"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/input_register"-->
+            <!--android:paddingBottom="10dp" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+>
+
+            <RadioGroup
+                android:id="@+id/sitter_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:textColor="@color/input_register">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="Male"
+                    android:textColor="@color/input_register" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Female"
+                    android:textColor="@color/input_register" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:padding="20dp">
+        <!--스크롤 뷰 partly 보여주는 거 layout_gravity를 줘서 그랬음 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/sitter_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="Name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+            <EditText
+                android:id="@+id/sitter_age"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="Age"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+            <EditText
+                android:id="@+id/sitter_school"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="Education"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+            <EditText
+                android:id="@+id/sitter_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+
+            <EditText
+                android:id="@+id/sitter_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="@string/hint_address"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+            <EditText
+                android:id="@+id/sitter_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/input_register_bg"
+                android:hint="@string/hint_phone"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+            <!-- Login Button -->
+
+
+            <EditText
+                android:id="@+id/sitter_note"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/input_register_bg"
+                android:hint="Tell us about who you are! "
+                android:inputType="textLongMessage"
+                android:padding="10dp"
+                android:textColor="@color/input_register"
+                android:textColorHint="@color/input_register_hint" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+            android:text=" 베이비 시터 경험: 아이들 연령대별 Your experience with age group"
+
+            android:textAlignment="center"
+            android:textColor="@color/input_register" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioGroup
+            android:id="@+id/ageGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/input_register"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/age0_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="0 ~ 1세"
+                android:textColor="@color/input_register" />
+
+            <RadioButton
+                android:id="@+id/age1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="1 ~3 " />
+
+            <RadioButton
+                android:id="@+id/age3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="3 ~ 5 " />
+
+
+            <RadioButton
+                android:id="@+id/age5_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="5~ 8 " />
+
+
+            <RadioButton
+                android:id="@+id/age8_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="8 ~12 " />
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text=" 베이비 시터로서의 성향"
+
+            android:textAlignment="center"
+            android:textColor="@color/input_register" />
+
+
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:padding="0dp">
+
+        <RadioGroup
+            android:id="@+id/apply_sitter_quality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/input_register"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/creative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="creative"
+                android:textColor="@color/input_register" />
+
+            <RadioButton
+                android:id="@+id/educational"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="교육성" />
+
+            <RadioButton
+                android:id="@+id/creativ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="창의성" />
+
+
+            <RadioButton
+                android:id="@+id/active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.14"
+                android:gravity="center_horizontal"
+                android:text="활동성" />
+
+
+        </RadioGroup>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ea4c88"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:layout_margin="0dp"
+        android:foregroundGravity="bottom"
+        android:layout_marginTop="50dp" />
+</LinearLayout>

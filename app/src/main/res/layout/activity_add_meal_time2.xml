@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"--><!--android:orientation="vertical"--><!--android:paddingLeft="20dp"--><!--android:paddingRight="20dp"--><!--android:paddingTop="10dp"--><!--android:paddingBottom="10dp">-->
+
+<!--<ImageView--><!--android:layout_width="62dp"--><!--android:layout_height="62dp"--><!--android:layout_gravity="center_horizontal"--><!--android:src="@drawable/stroller"--><!--android:tint="@android:color/holo_red_light" />-->
+
+<!--<TextView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_gravity="center_horizontal"--><!--android:paddingTop="10dp"--><!--android:text="Add your child's Meal Time"--><!--android:textAlignment="center" />-->
+
+<!--</LinearLayout>-->
+
+
+<!--<include layout="@layout/fragment_date_picker" />-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Lunch를 선택해 주세요"
+            android:textSize="@dimen/headline_size" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="현재 시각" />
+        <!--메인 액티비티에서 id 가져와서 객체로 부름  -->
+
+        <!--xml에서 자바클래스 가져올때 데이트타임 픽커 가져올때 풀 네임으로 -->
+        <com.example.gaeunlee.babysitter.add_child_categories.DateTimePickerMeal
+            android:id="@+id/dateTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btn_meal2"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/iam_babymama_button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:background="@color/black_overlay"
+            android:text="demo"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

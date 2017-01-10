@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gaeunlee.babysitter">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 첫 이미지 스크린 + 로그인 -->
+        <activity
+            android:name=".register.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.gaeunlee.babysitter.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChildrenDetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChildrenDetailActivity" />
+        </activity>
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
+        <activity android:name=".register.LoginActivity" />
+        <activity android:name=".register.ApplySitterActivity" />
+        <activity android:name=".register.RegisterActivity" >
+
+        </activity>
+        <activity
+            android:name=".sitter.SitterBookActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddChildActivity" />
+        <activity android:name=".register.TermActivity" />
+        <activity android:name=".sitter.SitterBookDetailActivity" />
+        <activity android:name=".PaymentInsertActivity" />
+        <activity android:name=".add_child_categories.AddInterestActivity" />
+        <activity android:name=".add_child_categories.AddMealTimeActivity" />
+        <activity android:name=".add_child_categories.AddBathAndBedTimeActivity" />
+        <activity android:name=".add_child_categories.AddAllergiesActivity" />
+
+
+
+        <!--<activity android:name=".add_child_categories.DateTimePickerMeal" /> -->
+        <activity android:name=".add_child_categories.AddMealTimeActivity2" />
+        <activity android:name=".add_child_categories.AddMealTimeActivity3" />
+        <activity android:name=".booking.BookingActivity" />
+        <activity android:name=".booking.ConfirmBookingActivity" />
+        <activity android:name=".register.ConfirmApplyActivity" />
+        <activity android:name=".booking.BookingHistoryActivity"></activity>
+
+    </application>
+
+</manifest>

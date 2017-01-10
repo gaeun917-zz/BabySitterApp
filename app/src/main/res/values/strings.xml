@@ -1,0 +1,16 @@
+<resources>
+    <string name="btn_link_to_term"><![CDATA[Terms of Service & Privacy Policy]]></string>
+    <string name="term_headline"><![CDATA[Terms of Service & Privacy Policy]]></string>
+    <string name="name_mama">stella grace lee</string>
+    <string name="address_mama">2025 California St. San Francisco, CA 94115</string>
+    <string name="email_mama">stellagracelee917@gmail.com</string>
+    <string name="child_name">Jake</string>
+    <string name="mychild">My Child</string>
+    <string name="add_child">Add Child</string>
+    <string name="btn_confirm">Confirm</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="confirm_message">00의 BabySitter, 000을 예약하셨습니다. 1시간 이내애 Babysitter로 부터 연락을 받으실 겁니다. 더 궁금하신 점은 BabySitter 이메일을 이용해 주세요</string>
+    <string name="confrim_apply_message">Thank you for Applying. We will Contact you shortly. BabySitter를 지원하셨습니다.</string>
+</resources>

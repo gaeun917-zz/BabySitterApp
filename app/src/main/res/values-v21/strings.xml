@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BABY SITTER</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_name_prompt">Name:</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="about_headline">BABY SITTER HISTORY </string>
+    <string name="about_text">BABY SITTER IS AN APP THAT WILL MATCH THE PERFECT BABY SITTER NEAR YOU.
+        Henry Twill set out to create supplements and nutritional products
+        made from the purest ingredients and backed by scientific and performance data – to
+        provide a strong basis of trust and accountability. His quest began while
+        training for his first 5K marathon, after recovering from a lengthy injury
+        that left him with residual aches, pains, and decreased athletic performance.
+        He was disheartened by the vast array of supplements and nutritional products on
+        the market that subsisted of lofty claims, and little proof of those claims. He yearned for simple
+        and natural ingredients, in their purest form, instead of labels with lengthy chemical names and disclaimers.
+        He also cared immensely for the environment, and wanted to find products that were responsibly sourced. When no products
+        lived up to his strict requirements, Henry set his sights on creating products that catered to his own vision. Today tha
+        t vision has become H+ Sport…offering a variety of supplements, energy bars, rehydration solutions, and active wear that
+        complement active lifestyles. At the foundation of H+ Sports are products backed by scientific and performance data,
+        that have been created using natural and renewable resources. H+ Sport is dedicated to creating eco-friendly, high-quality,
+        nutrient-rich, nutritional products that enhance active lifestyles. In addition, our H+ Sport Active clothing line is made t
+        o be functional, stylish, comfortable, and durable, using all natural and organic fibers.</string>
+    <string name="title_activity_about">About BABY SITTER</string>
+    <string name="title_activity_detail">Detail Activity</string>
+    <string name="iam_babysitter">Apply to be a babysitter</string>
+    <string name="iam_babymama">Find your babysitter</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="login_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="large_text">DUMMY\nCONTENT</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="hint_address"> Address (2025 E.st, San Francisco, CA, 94115)</string>
+    <string name="hint_phone">Phone Number</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

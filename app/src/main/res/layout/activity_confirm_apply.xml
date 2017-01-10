@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:background="#FFFFFF"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bear"
+            android:tint="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="10dp"
+            android:text="@string/confrim_apply_message"
+            android:textAlignment="center"
+            android:textColor="@color/abc_background_cache_hint_selector_material_dark"
+            android:layout_weight="0.82" />
+    </LinearLayout>
+</LinearLayout>

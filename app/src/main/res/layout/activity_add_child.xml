@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/add_child_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+
+        android:paddingTop="40dp">
+
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bear"
+            android:tint="@android:color/holo_red_light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="10dp"
+            android:text="Please give us some information about your child and we will find a great Babay sitter for you"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+            <RadioGroup
+                android:id="@+id/child_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+               >
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Boy" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Girl" />
+
+            </RadioGroup>
+    </HorizontalScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            <!--스크롤 뷰 partly 보여주는 거 layout_gravity를 줘서 그랬음 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/add_child_edit_text"
+                    android:hint="@string/hint_first_name"
+
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/input_register"
+                    android:textColorHint="@color/input_register_hint" />
+
+                <EditText
+                    android:id="@+id/last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/add_child_edit_text"
+                    android:hint="@string/hint_last_name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="@color/input_register"
+                    android:textColorHint="@color/input_register_hint" />
+
+
+                <EditText
+                    android:id="@+id/Birthday_add_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:ems="10"
+
+                    android:hint="Birthday"
+                    android:inputType="date"
+                    android:nestedScrollingEnabled="true" />
+
+
+                <Button
+                    android:id="@+id/btnInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/add_child_edit_text"
+                    android:outlineProvider="bounds"
+                    android:text="Interest"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/btnMealTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/add_child_edit_text"
+                    android:text="MealTime"
+                    android:textColor="@color/white" />
+
+
+                <Button
+                    android:id="@+id/btnBathandBed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/add_child_edit_text"
+                    android:text="Bath and Bed Time "
+                    android:textColor="@color/white" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btnToilet"-->
+                <!--android:background="@color/add_child_edit_text"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:text="Toilet"-->
+                <!--android:textColor="@color/white" />-->
+
+                <Button
+                    android:id="@+id/btnAllergies"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="@color/add_child_edit_text"
+                    android:text="Allergies"
+                    android:textColor="@color/white" />
+
+
+                <!-- note Button -->
+
+                <EditText
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Note"
+                    android:inputType="textLongMessage" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/demo"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/iam_babymama_button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="1"
+            android:background="@color/black_overlay"
+            android:text="demo"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+
+</LinearLayout>

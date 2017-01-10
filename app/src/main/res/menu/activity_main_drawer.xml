@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_child"
+            android:icon="@drawable/add_baby"
+            android:title="Photo" />
+        <item
+            android:id="@+id/nav_booking_history"
+            android:icon="@drawable/rattle"
+            android:title="Booking History" />
+        <item
+            android:id="@+id/nav_update_profile"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Update My Info" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Payment" />
+    </group>
+
+    <item android:title="We are BabySitter">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/stroller"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Website" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Email Us" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

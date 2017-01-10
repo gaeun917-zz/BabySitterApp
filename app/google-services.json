@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "273159544261",
+    "firebase_url": "https://babysitter-8cbfa.firebaseio.com",
+    "project_id": "babysitter-8cbfa",
+    "storage_bucket": "babysitter-8cbfa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273159544261:android:89ddda99cb831bbf",
+        "android_client_info": {
+          "package_name": "com.example.gaeunlee.babysitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273159544261-sf92riaufq81rde0ddnrhglmahs3c4im.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB47HnbfAxeHahhQTvFduh-xK7Ww5ZPbPc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

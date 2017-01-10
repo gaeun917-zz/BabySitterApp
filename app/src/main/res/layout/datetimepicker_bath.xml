@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+
+
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center">
+
+		<CheckBox
+			android:id="@+id/enableDateCheckBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Setting Time "
+			android:layout_gravity="bottom" />
+
+		<DatePicker
+	    	android:id="@+id/datePicker"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+
+		<CheckBox
+			android:id="@+id/enableTimeCheckBox"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Setting Time "
+			android:layout_gravity="bottom" />
+
+		<TimePicker
+	    	android:id="@+id/timePicker"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	</LinearLayout>
+
+
+
+
+
+
+</ScrollView>

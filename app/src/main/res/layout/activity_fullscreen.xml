@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/craft"
+    tools:context=".register.FullscreenActivity"
+    >
+
+
+    <ImageView
+        android:layout_width="414dp"
+        android:layout_height="609dp"
+        android:layout_gravity="center_horizontal|top"
+        android:scaleType="centerCrop" />
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <!--<FrameLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:backgroundTintMode="src_atop"-->
+    <!--android:fitsSystemWindows="true">-->
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/black_overlay"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/iam_babymama_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black_overlay"
+            android:text="@string/iam_babymama"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/iam_babysitter_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iam_babymama_button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/black_overlay"
+            android:text="@string/iam_babysitter"
+            android:textColor="@color/button_text" />
+
+    </LinearLayout>
+
+
+    <!--</FrameLayout>-->
+
+</FrameLayout>

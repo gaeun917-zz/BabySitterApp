@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/add_child_background"
+    android:contextClickable="true">
+
+    <ImageView
+        android:id="@+id/sitter_imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:focusable="false"
+        android:scaleType="fitStart"
+        android:src="@drawable/jacket101" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@id/imageView"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="150dp">
+
+        <TextView
+            android:id="@+id/sitter_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:text="JAKE"
+            android:textColor="@color/bg_main"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/sitter_age_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:text="JAKE"
+            android:textColor="@color/bg_main"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/sitter_skills_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:text="JAKE"
+            android:textColor="@color/bg_main"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>
